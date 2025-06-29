@@ -37,3 +37,7 @@ jobs:
             ${{ env.FILE_NAME }}.zip
           draft: true
           generate_release_notes: true
+          body: |
+            2024年の第68回 自動制御連合講演会のテンプレートです。
+            https://www.jsme.or.jp/conference/rengo68/
+            Typst v0.13.1でコンパイルできます。
