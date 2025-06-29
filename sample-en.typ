@@ -1,6 +1,6 @@
 // MIT No Attribution
-// Copyright 2024 Shunsuke Kimura
-// https://github.com/kimushun1101/rengo2024-typst
+// Copyright 2024, 2025 Shunsuke Kimura
+// https://github.com/kimushun1101/rengo-typst-template
 
 #import "lib-en.typ": rengo-en, definition, lemma, theorem, corollary, proof
 #show: rengo-en.with(
@@ -104,8 +104,7 @@ The ctheorems package is imported.
 = References
 References should appear in a separate bibliography at
 the end of the paper, with items referred to with numerals
-in square brackets @web @Conference @Journal. @Book
-// I have not found a way to cite references as [1, 2, 3] (2024.07.07)
+in square brackets @web @Conference @Journal.
 
 The following format is recommended for references:
 #set enum(numbering: "a)")
@@ -113,7 +112,7 @@ The following format is recommended for references:
 	$[$No.$]$ Authors: Paper title; \textit{Journal Title}, Vol.~volume, No.~number, pp.~first page--last page (year)
 + Conference papers\
 	$[$No.$]$ Authors: Paper title; \textit{Proceedings Title}, pp.~first page--last page (year)
-+ Books\
++ Books @Book\
 	$[$No.$]$ Authors: \textit{Book Title}, pp.~first page--last page, publisher (year)
 + Website\
 	$[$No.$]$ URL
