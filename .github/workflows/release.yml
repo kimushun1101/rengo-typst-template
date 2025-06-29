@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*'
 
+env:
+  FILE_NAME: rengo2025-typst
+
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -12,25 +15,25 @@ jobs:
       - uses: actions/checkout@v4
       - name: Make sample ja files
         run: |
-          mkdir rengo-typst-ja
-          cp -r --parents sample.typ README.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib.typ rengo.csl rengo-typst-ja
-          zip -r rengo-typst-ja.zip rengo-typst-ja
+          mkdir $FILE_NAME-ja
+          cp -r --parents sample.typ README.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib.typ rengo.csl $FILE_NAME-ja
+          zip -r $FILE_NAME-ja.zip $FILE_NAME-ja
       - name: Make sample en files
         run: |
-          mkdir rengo-typst-en
-          cp -r --parents sample-en.typ README-en.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib-en.typ rengo.csl rengo-typst-en
-          zip -r rengo-typst-en.zip rengo-typst-en
+          mkdir $FILE_NAME-en
+          cp -r --parents sample-en.typ README-en.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib-en.typ rengo.csl $FILE_NAME-en
+          zip -r $FILE_NAME-en.zip $FILE_NAME-en
       - name: Make sample all files
         run: |
-          mkdir rengo2024-typst
-          cp -r --parents rengo-typst-ja rengo-typst-en rengo2024-typst
-          zip -r rengo2024-typst.zip rengo2024-typst
+          mkdir $FILE_NAME
+          cp -r --parents $FILE_NAME-ja $FILE_NAME-en $FILE_NAME
+          zip -r $FILE_NAME.zip $FILE_NAME
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
-            rengo-typst-ja.zip
-            rengo-typst-en.zip
-            rengo2024-typst.zip
+            ${{ env.FILE_NAME }}-ja.zip
+            ${{ env.FILE_NAME }}-en.zip
+            ${{ env.FILE_NAME }}.zip
           draft: true
           generate_release_notes: true
