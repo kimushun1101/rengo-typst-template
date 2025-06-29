@@ -2,13 +2,12 @@
 // Copyright 2024 Shunsuke Kimura
 // https://github.com/kimushun1101/rengo2024-typst
 
-#import "libs/rengo-en/lib.typ": rengo, definition, lemma, theorem, corollary, proof
-#show: rengo.with(
+#import "lib-en.typ": rengo-en, definition, lemma, theorem, corollary, proof
+#show: rengo-en.with(
   title: [Sample Manuscript for the Japan Joint Automatic \ Control Conference], 
-  authors: [$ast$T. Jido, H.~Seigyo (Rengo Univ.), and J. Jido (Rengo Corp.)],
+  authors: [$ast$T. Jido, H.~Seigyo (Rengo Univ.) and J. Jido (Rengo Corp.)],
   abstract: [This document describes the information for authors such as paper submission and the style of manuscript. Only PDF manuscripts are acceptable. The PDF manuscripts should be uploaded on the conference homepage. This document is a template file for a paper, although it is not necessary to strictly follow this format.],
   keywords: ([Electrical paper submission], [The style of manuscript]),
-  bibliography: bibliography("refs.bib", full: false)
 )
 
 = Introduction
@@ -69,7 +68,6 @@ Figures should be of sufficient quality for publication (300 dpi or higher is re
 //   )
 // ) <tab:fonts>
 
-
 == Equations
 An example of equations is as follows:
 $ dot(x) (t) &= A x(t) + B u(t), $ <eq:system>
@@ -77,12 +75,8 @@ $ y(t) &= C x(t) + D u(t). $ <eq:output>
 // The reference for the equation number is @eq:system or @eq:output.
 
 == Theorems
-// The following is an example of the usage of the *theorem* environment.
-// The ctheorems package is imported.
-// If you can not build due to Proxy or other reasons, download the package manually into the libs folder and use it.
-// + Download ctheorems-1.1.2 from https://typst.app/universe/package/ctheorems 
-// + Extract the commpressed file into `libs` folder.
-// + Modify `libs/rengo/lib.typ` into `"@preview/ctheorems:1.1.2"` in `"libs/ctheorems-1.1.2/lib.typ"`.
+The following is an example of the usage of the *theorem* environment.
+The ctheorems package is imported.
 
 #theorem[
   Write the theorem here.
@@ -92,20 +86,20 @@ $ y(t) &= C x(t) + D u(t). $ <eq:output>
   A box (QED mark) is automatically inserted at the end of the proof.
 ]
 
-#definition("Definition of A")[
-    Write the definition of A here.
-]<def:definition1>
-#lemma("Lemma of B")[
-  Write the lemma of B here.
-]<lem:lemma1>
-#lemma[
-  Write the lemma here.
-  The numbering is counted from 1 for each definition or lemma.
-]<lem:lemma2>
-#corollary[
-  Write the corollary here.
-  Labels can also be used for reference as @def:definition1.
-]
+// #definition("Definition of A")[
+//     Write the definition of A here.
+// ]<def:definition1>
+// #lemma("Lemma of B")[
+//   Write the lemma of B here.
+// ]<lem:lemma1>
+// #lemma[
+//   Write the lemma here.
+//   The numbering is counted from 1 for each definition or lemma.
+// ]<lem:lemma2>
+// #corollary[
+//   Write the corollary here.
+//   Labels can also be used for reference as @def:definition1.
+// ]
 
 = References
 References should appear in a separate bibliography at
@@ -124,6 +118,6 @@ The following format is recommended for references:
 + Website\
 	$[$No.$]$ URL
 
-// Information on references can be found on line 11 of this file as follows: `bibliography: bibliography("refs.bib", full: false)`.
+#bibliography("refs.yml", full: false)
 // A refs.yml is also available instead of a refs.bib.
 // Changing `full` to `true` will also list references that have not been cited in the paper. Set it back to `false` at the time of submission.
