@@ -2,15 +2,14 @@
 // Copyright 2024 Shunsuke Kimura
 // https://github.com/kimushun1101/rengo2024-typst
 
-#import "libs/rengo/lib.typ": rengo, definition, lemma, theorem, corollary, proof
+#import "lib.typ": rengo, definition, lemma, theorem, corollary, proof
 #show: rengo.with(
   title: [自動制御連合講演会サンプル原稿], 
-  authors: [◯ 自動太郎，制御花子(連合大学)，自動次郎 (連合会社)],
-  etitle: [Sample Manuscript for the Japan Joint Automatic Control Conference],
-  eauthors: [$ast$T. Jido, H.~Seigyo (Rengo Univ.), and J. Jido (Rengo Corp.)],
+  authors: [◯ 自動太郎　制御花子(連合大学)　自動次郎 (連合会社)],
+  title-en: [Sample Manuscript for the Japan Joint Automatic Control Conference],
+  authors-en: [$ast$T. Jido, H.~Seigyo (Rengo Univ.) and J. Jido (Rengo Corp.)],
   abstract: [This document describes the information for authors such as paper submission and the style of manuscript. Only PDF manuscripts are acceptable. The PDF manuscripts should be uploaded on the conference homepage. This document is a template file for a paper, although it is not necessary to strictly follow this format.],
   keywords: ([Electrical paper submission], [The style of manuscript]),
-  bibliography: bibliography("refs.yml", full: false)
 )
 
 = はじめに
@@ -89,10 +88,7 @@ $ y(t) &= C x(t) + D u(t) $ <eq:output>
 == 定理環境
 以下は，theorem 環境の使用例です．
 // ctheorems パッケージを使用しています．
-// Proxy などの関係でビルドできない場合には，libs フォルダーに手動ダウンロードしてお使いください．
-// + ctheorems-1.1.2 を https://typst.app/universe/package/ctheorems からダウンロードしてくる．
-// + `libs` フォルダーに展開する．
-// + `libs/rengo/lib.typ` で `"@preview/ctheorems:1.1.2"` となっている部分を `"libs/ctheorems-1.1.2/lib.typ"` と修正する．
+// https://typst.app/universe/package/ctheorems
 
 #theorem[
   ここに定理の内容を記述して下さい．系や補題の場合も同様です．
@@ -132,6 +128,6 @@ $ y(t) &= C x(t) + D u(t) $ <eq:output>
 + Websiteの場合\
 	$[$番号$]$ URL
 
-// 参考文献の情報は 15行目の `bibliography: bibliography("refs.yml", full: false)` で渡されます．
+#bibliography("refs.yml", full: false)
 // refs.yml に記載する． refs.bib に変更することもできますが，日本語論文の著者名がうまく表示分けができないため，日本語論文を含む参考文献リストの場合には yml で記載することを推奨します．(2024.07.07)
 // `full` を `true` に変更すると本文引用がされていない文献も出力される．出力確認のために `true` にしてもよいが，提出時には `false` に戻してください．

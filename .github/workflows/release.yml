@@ -12,13 +12,13 @@ jobs:
       - uses: actions/checkout@v4
       - name: Make sample ja files
         run: |
-          mkdir -p rengo-typst-ja/libs
-          cp -r --parents sample.typ README.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo rengo-typst-ja
+          mkdir rengo-typst-ja
+          cp -r --parents sample.typ README.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib.typ rongo.csl rengo-typst-ja
           zip -r rengo-typst-ja.zip rengo-typst-ja
       - name: Make sample en files
         run: |
           mkdir rengo-typst-en
-          cp -r --parents sample-en.typ README-en.md fig1.svg LICENSE.MD refs.bib refs.yml .vscode libs/rengo-en rengo-typst-en
+          cp -r --parents sample-en.typ README-en.md fig1.svg LICENSE.md refs.bib refs.yml .vscode lib-en.typ rongo.csl rengo-typst-en
           zip -r rengo-typst-en.zip rengo-typst-en
       - name: Make sample all files
         run: |

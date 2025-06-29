@@ -4,7 +4,7 @@ Journal:
     title: Paper title
     author: ["Jido, Taro", "Seigyo, Hanako", "Jido, Jiro"]
     page-range: 1-4
-    date: 2024
+    date: 2025
     parent:
         type: Periodical
         title: Journal Title
@@ -19,7 +19,7 @@ JournalJP:
     title: 和文論文タイトル
     author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
     page-range: 100–110
-    date: 2024
+    date: 2025
     parent:
         type: Periodical
         title: 自動学会論文集
@@ -32,7 +32,7 @@ Conference:
     type: Article
     author:  ["Jido, Taro", "Seigyo, Hanako", "Jido, Jiro"]
     title: Sample manuscript for the Japan joint automatic control conference
-    date: 2024
+    date: 2025
     page-range: 1-6
     parent:
         - type: Proceedings
@@ -44,11 +44,11 @@ ConferenceJP:
     type: Article
     author: ["自動, 太郎", "制御, 花子", "自動, 次郎"]
     title: 自動連合講演会サンプル原稿
-    date: 2024
+    date: 2025
     page-range: 1-4
     parent:
         - type: Proceedings
-          title: 第67回自動制御連合講演会予稿集
+          title: 第68回自動制御連合講演会予稿集
 
 # 英文書籍
 Book:
@@ -57,7 +57,7 @@ Book:
     author: Seigyo, Hanako
     page-range: 1-4
     publisher: Publisher
-    date: 2024
+    date: 2025
 
 # 和文書籍
 BookJa:
@@ -67,7 +67,7 @@ BookJa:
     author: ["制御, 花子"]
     page-range: 1-200
     publisher: 出版社
-    date: 2024
+    date: 2025
 
 # Web サイト
 web:
@@ -75,4 +75,4 @@ web:
     title: 自動制御連合ホームページ
     url:
         value: http://www.jjacc.org/
-        date: 2024-07-07
+        date: 2025-06-29
