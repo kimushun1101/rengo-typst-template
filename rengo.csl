@@ -14,7 +14,7 @@
     <category field="engineering"/>
     <category field="generic-base"/>
     <summary>第67回自動制御連合講演会フォーマット</summary>
-    <updated>2024-07-06T21:04:32+00:00</updated>
+    <updated>2025-06-29T21:04:32+00:00</updated>
     <rights license="http://creativecommons.org/licenses/by-sa/3.0/">This work is licensed under a Creative Commons Attribution-ShareAlike 3.0 License</rights>
   </info>
   <locale xml:lang="en">
@@ -140,12 +140,12 @@
     </date>
   </macro>
   <!-- End of Macros -->
-  <citation collapse="citation-number">
+  <citation>
     <sort>
       <key variable="citation-number"/>
     </sort>
-    <layout prefix="" suffix="" delimiter=", ">
-      <text variable="citation-number" prefix="[" suffix="]" />
+    <layout prefix="[" suffix="]" delimiter=", ">
+      <text variable="citation-number"/>
     </layout>
   </citation>
   <bibliography entry-spacing="0" second-field-align="flush">
