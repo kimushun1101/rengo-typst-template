@@ -7,12 +7,12 @@ For an overview of Typst, please click https://typst.app/docs/tutorial/writing-i
 
 | Files         | Description                                 |
 | ------------- | ------------------------------------------- |
-| sample-en.typ | Source code of the template in Typst       |
-| fig1.svg　    | Sample figure                               |
-| refs.yml　    | Reference list in YAML format               |
-| refs.bib　    | Reference list in BiBTeX format             |
-| lib-en.typ | Style file of the manuscript        |
-| rengo.csl | Style file of the reference list  |
+| sample-en.typ | Source code of the template in Typst        |
+| fig1.svg      | Sample figure                               |
+| refs.yml      | Reference list in YAML format               |
+| refs.bib      | Reference list in BiBTeX format             |
+| lib-en.typ    | Style file of the manuscript                |
+| rengo.csl     | Style file of the reference list            |
 
 `sample.typ` and `lib.typ` are template files for Japanese manuscripts.
 

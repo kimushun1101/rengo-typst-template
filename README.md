@@ -5,14 +5,14 @@
 自動制御連合講演会予稿集の原稿をTypstで書くときのテンプレートです。  
 Typstの概要については https://typst-jp.github.io/docs/tutorial/writing-in-typst/ をご覧ください。
 
-| ファイル       | 説明                                |
-| ------------- | ----------------------------------- |
-| sample.typ    | 和文テンプレートの Typst ソースコード  |
-| fig1.svg　    | サンプル画像           　　　 　      |
-| refs.yml　    | 参考文献リストのファイル YAML 形式     |
-| refs.bib　    | 参考文献リストのファイル BiBTeX 形式　 |
-| lib.typ | 和文テンプレートのフォーマット　  |
-| rengo.csl | 参考文献リストのフォーマット　  |
+| ファイル    | 説明                              |
+| ---------- | -------------------------------- |
+| sample.typ | 和文テンプレートの Typst ソースコード |
+| fig1.svg   | サンプル画像                       |
+| refs.yml   | 参考文献リストのファイル YAML 形式    |
+| refs.bib   | 参考文献リストのファイル BiBTeX 形式  |
+| lib.typ    | 和文テンプレートのフォーマット        |
+| rengo.csl  | 参考文献リストのフォーマット          |
 
 `sample-en.typ` ファイルと `lib-en.typ` ディレクトリは英文テンプレート用です。
 
