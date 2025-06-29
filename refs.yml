@@ -36,7 +36,7 @@ Conference:
     page-range: 1-6
     parent:
         - type: Proceedings
-          title: Proc. 67th Japan Joint Automatic Control Conference
+          title: Proc. 68th Japan Joint Automatic Control Conference
 
 # 国内学会
 ConferenceJP:
