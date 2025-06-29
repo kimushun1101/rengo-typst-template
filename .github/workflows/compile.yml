@@ -16,7 +16,9 @@ jobs:
         typ_file_name: [sample, sample-en]
     steps:
       - uses: actions/checkout@v4
-      - uses: typst-community/setup-typst@v3
+      - uses: typst-community/setup-typst@v4
+        with:
+          typst-version: 0.12.0
       - name: Install fonts
         run: |
           sudo apt-get update
