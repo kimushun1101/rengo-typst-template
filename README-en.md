@@ -18,7 +18,7 @@ For an overview of Typst, please click https://typst.app/docs/tutorial/writing-i
 
 ## How to use it
 
-The latest version of this template is available on [GitHub Releases page](https://github.com/kimushun1101/rengo2024-typst/releases/latest).  
+The latest version of this template is available on [GitHub Releases page](https://github.com/kimushun1101/rengo-typst-template/releases/latest).  
 If you are familiar with GitHub, you can use `git clone`, `use this template`, and so on.
 
 ### On VS Code
