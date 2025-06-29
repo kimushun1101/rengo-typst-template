@@ -1,7 +1,6 @@
 // MIT No Attribution
 // Copyright 2024, 2025 Shunsuke Kimura
 
-#let conference-name = "自動制御連合講演会"
 #import "@preview/jaconf:0.4.1": jaconf, definition, lemma, theorem, corollary, proof, appendix
 
 #let rengo(
