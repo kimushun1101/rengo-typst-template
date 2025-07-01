@@ -47,6 +47,7 @@
   )
   set par(leading: 0.6em, justify: true, spacing: 0.7em, first-line-indent: (amount: 1em, all: true))
   show heading: set text(weight: "medium")
+  show bibliography: set par(spacing: 1.5em)
 
   body
 }
