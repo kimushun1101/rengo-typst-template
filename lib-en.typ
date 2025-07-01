@@ -41,6 +41,8 @@
     // 補足語 Supplement
     supplement-image: [Fig.],
     supplement-table: [Table],
+    // 番号付け　Numbering
+    numbering-headings: "1.1　"
   )
   set par(leading: 0.6em, justify: true, spacing: 0.7em, first-line-indent: (amount: 1em, all: true))
 
