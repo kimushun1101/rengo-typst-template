@@ -1,7 +1,7 @@
 // MIT No Attribution
 // Copyright 2024, 2025 Shunsuke Kimura
 
-#import "@preview/jaconf:0.4.1": jaconf, definition, lemma, theorem, corollary, proof, appendix
+#import "@preview/jaconf:0.5.0": jaconf, definition, lemma, theorem, corollary, proof, appendix
 
 #let rengo(
   title: [日本語タイトル],
@@ -17,9 +17,9 @@
 ) = {
   show: jaconf.with(
     // 基本 Basic
-    title-ja: title,
+    title: title,
     title-en: title-en,
-    authors-ja: authors,
+    authors: authors,
     authors-en: authors-en,
     abstract: abstract,
     keywords: keywords,
