@@ -1,7 +1,7 @@
 // MIT No Attribution
 // Copyright 2024, 2025 Shunsuke Kimura
 
-#import "@preview/jaconf:0.4.1": jaconf, appendix
+#import "@preview/jaconf:0.5.0": jaconf, appendix
 
 #let rengo-en(
   title: [sample],
@@ -15,9 +15,9 @@
 ) = {
   show: jaconf.with(
     // 基本 Basic
-    title-ja: title,
+    title: title,
     // title-en: title,
-    authors-ja: none,
+    authors: none,
     authors-en: authors,
     abstract: abstract,
     keywords: keywords,
